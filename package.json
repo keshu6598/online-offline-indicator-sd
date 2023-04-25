@@ -7,6 +7,7 @@
     "author": "Microsoft",
     "scripts": {
         "start": "node index.js",
+        "start-dev": "nodemon index.js -e ejs,js,css,html,jpg,png,scss",
         "lint": "eslint",
         "format": "prettier --single-quote --write *.js"
     },
