@@ -18,7 +18,9 @@ const port = process.env.PORT || 3000;
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.options('*', cors());
+app.use(cors({
+    origin: '*'
+}));
 
 
 // Hello World for index page
